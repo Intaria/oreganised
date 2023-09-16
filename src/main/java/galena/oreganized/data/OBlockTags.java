@@ -66,10 +66,6 @@ public class OBlockTags extends BlockTagsProvider {
         tag(Tags.Blocks.ORES_IN_GROUND_STONE).add(OBlocks.LEAD_ORE.get(), OBlocks.SILVER_ORE.get());
         tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE).add(OBlocks.DEEPSLATE_LEAD_ORE.get(), OBlocks.DEEPSLATE_SILVER_ORE.get());
 
-        // Mineables!
-        /*tag(MINEABLE_WITH_BUSH_HAMMER).add(
-
-        );*/
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
                 OBlocks.LEAD_ORE.get(),
                 OBlocks.DEEPSLATE_LEAD_ORE.get(),

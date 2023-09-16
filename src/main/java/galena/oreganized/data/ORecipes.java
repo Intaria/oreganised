@@ -37,9 +37,6 @@ public class ORecipes extends ORecipeProvider {
         ore(OItems.LEAD_INGOT.get(), LEAD_SMELTABLES,  0.7F, "oreganized:lead_ingot", consumer);
         ore(OItems.SILVER_INGOT.get(), SILVER_SMELTABLES,  1.0F, "oreganized:silver_ingot", consumer);
 
-        smeltingRecipe(OItems.LEAD_NUGGET.get(), OItems.BUSH_HAMMER.get(), 0.1F).save(consumer, Oreganized.modLoc( "lead_nugget_from_smelting"));
-        blastingRecipe(OItems.LEAD_NUGGET.get(), OItems.BUSH_HAMMER.get(), 0.1F).save(consumer, Oreganized.modLoc( "lead_nugget_from_blasting"));
-
         quadTransform(OBlocks.POLISHED_GLANCE, OBlocks.GLANCE).save(consumer);
         quadTransform(OBlocks.GLANCE_BRICKS, OBlocks.POLISHED_GLANCE).save(consumer);
 
@@ -156,26 +153,6 @@ public class ORecipes extends ORecipeProvider {
                 .requires(Tags.Items.INGOTS_GOLD)
                 .requires(Tags.Items.INGOTS_GOLD)
                 .requires(Tags.Items.INGOTS_GOLD)
-                .unlockedBy("has_gold_ingot", has(Tags.Items.INGOTS_GOLD))
-                .unlockedBy("has_silver_ingot", has(OTags.Items.INGOTS_SILVER))
-                .save(consumer);
-
-
-        ShapedRecipeBuilder.shaped(OItems.BUSH_HAMMER.get())
-                .pattern("AA")
-                .pattern("B ")
-                .define('A', OTags.Items.INGOTS_LEAD)
-                .define('B', Tags.Items.RODS_WOODEN)
-                .unlockedBy("has_lead_ingot", has(OTags.Items.INGOTS_LEAD))
-                .unlockedBy("has_stick", has(Tags.Items.RODS_WOODEN))
-                .save(consumer);
-
-        ShapedRecipeBuilder.shaped(OItems.SILVER_MIRROR.get())
-                .pattern("ABA")
-                .pattern("ABA")
-                .pattern(" A ")
-                .define('A', Tags.Items.INGOTS_GOLD)
-                .define('B', OTags.Items.INGOTS_SILVER)
                 .unlockedBy("has_gold_ingot", has(Tags.Items.INGOTS_GOLD))
                 .unlockedBy("has_silver_ingot", has(OTags.Items.INGOTS_SILVER))
                 .save(consumer);

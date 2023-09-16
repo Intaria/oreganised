@@ -58,10 +58,12 @@ public class ExposerBlock extends DirectionalBlock implements ISilver, EntityBlo
         return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));
     }
 
+    /*
     @Override
     public BlockState mirror(BlockState state, Mirror mirror) {
         return state.rotate(mirror.getRotation(state.getValue(FACING)));
     }
+    */
 
     @Override
     public void tick(BlockState state, ServerLevel world, BlockPos pos, RandomSource random) {

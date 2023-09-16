@@ -34,7 +34,7 @@ public class OItemTags extends ItemTagsProvider {
     protected void addTags() {
         // Oreganized
         tag(LEAD_SOURCE).addTags(INGOTS_LEAD, NUGGETS_LEAD, ORES_LEAD).add(
-                OItems.BUSH_HAMMER.get(), OItems.MOLTEN_LEAD_BUCKET.get()
+                OItems.MOLTEN_LEAD_BUCKET.get()
         );
         copy(OTags.Blocks.CRYSTAL_GLASS, CRYSTAL_GLASS);
         copy(OTags.Blocks.CRYSTAL_GLASS_PANES, CRYSTAL_GLASS_PANES);
@@ -55,7 +55,6 @@ public class OItemTags extends ItemTagsProvider {
         tag(NUGGETS_NETHERITE).add(OItems.NETHERITE_NUGGET.get());
 
         tag(BUCKETS_MOLTEN_LEAD).add(OItems.MOLTEN_LEAD_BUCKET.get());
-        tag(TOOLS_BUSH_HAMMER).add(OItems.BUSH_HAMMER.get());
 
 
         copy(OTags.Blocks.ORES_SILVER, ORES_SILVER);

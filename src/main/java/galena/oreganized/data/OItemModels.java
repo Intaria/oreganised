@@ -41,7 +41,6 @@ public class OItemModels extends OItemModelProvider {
         normalItem(OItems.SHRAPNEL_BOMB_MINECART);
         normalItem(OItems.SHRAPNEL_BOMB_MINECART);
 
-        toolItem(OItems.BUSH_HAMMER);
         toolItem(OItems.ELECTRUM_SWORD);
         toolItem(OItems.ELECTRUM_SHOVEL);
         toolItem(OItems.ELECTRUM_PICKAXE);

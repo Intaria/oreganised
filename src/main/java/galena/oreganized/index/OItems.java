@@ -30,8 +30,6 @@ public class OItems {
 
 
     // Tools
-    public static final RegistryObject<Item> BUSH_HAMMER = ITEMS.register("bush_hammer", () -> new BushHammerItem(OItemTiers.LEAD, 2.5F, -2.8F, (new Item.Properties()).stacksTo(1).tab(CreativeModeTab.TAB_TOOLS)));
-
     public static final RegistryObject<Item> ELECTRUM_SWORD = ITEMS.register("electrum_sword", () -> new OSwordItem(OItemTiers.ELECTRUM, 3, -2.2F, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<Item> ELECTRUM_SHOVEL = ITEMS.register("electrum_shovel", () -> new ShovelItem(OItemTiers.ELECTRUM, 1.5F, -2.8F, (new Item.Properties()).tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<Item> ELECTRUM_PICKAXE = ITEMS.register("electrum_pickaxe", () -> new PickaxeItem(OItemTiers.ELECTRUM, 1, -2.6F, (new Item.Properties()).tab(CreativeModeTab.TAB_TOOLS)));
@@ -39,8 +37,6 @@ public class OItems {
     public static final RegistryObject<Item> ELECTRUM_HOE = ITEMS.register("electrum_hoe", () -> new HoeItem(OItemTiers.ELECTRUM, 0, -2.8F, (new Item.Properties()).tab(CreativeModeTab.TAB_TOOLS)));
 
     // Misc Tools
-    public static final RegistryObject<Item> SILVER_MIRROR = ITEMS.register("silver_mirror", () -> new SilverMirrorItem(new Item.Properties().stacksTo(1)));
-    //public static final RegistryObject<Item> BROKEN_SILVER_MIRROR = ITEMS.register("broken_silver_mirror", () -> new OItem(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> MOLTEN_LEAD_BUCKET = ITEMS.register("molten_lead_bucket", () -> new BucketItem(OFluids.MOLTEN_LEAD, new Item.Properties().stacksTo(1).tab(CreativeModeTab.TAB_MISC)));
 
     // Armor

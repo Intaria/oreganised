@@ -60,43 +60,4 @@ public class OreganizedClient {
         MinecraftForge.EVENT_BUS.register(new StunningOverlay());
         event.registerAbove(VanillaGuiOverlay.FROSTBITE.id(), "stunning", new StunningOverlay());
     }
-
-
-    @Mod.EventBusSubscriber(modid = Oreganized.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.FORGE)
-    public static class ForgeBusEvents {
-
-        @SubscribeEvent
-        public static void addTooltips(ItemTooltipEvent event) {
-            if (event.getItemStack().is(OItems.BUSH_HAMMER.get())) {
-                List<Component> tooltip = event.getToolTip();
-                MutableComponent wipTitle = Component.translatable("tooltip.oreganized.wip.title");
-                MutableComponent wipDesc = Component.translatable("tooltip.oreganized.wip.description");
-
-                tooltip.add(wipTitle.withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.BOLD));
-                tooltip.add(wipDesc.withStyle(ChatFormatting.DARK_PURPLE).withStyle(ChatFormatting.ITALIC));
-            }
-        }
-
-        /*@SubscribeEvent
-        public static void renderMoltenLeadFogColor(ViewportEvent.ComputeFogColor event) {
-            Camera camera = event.getCamera();
-            FluidState fluidState = camera.getBlockAtCamera().getFluidState();
-
-            if(fluidState.getType().isSame(OFluids.MOLTEN_LEAD.get())) {
-                event.setRed(57F / 255F);
-                event.setGreen(57F / 255F);
-                event.setBlue(95F / 255F);
-            }
-        }
-        @SubscribeEvent
-        public static void renderMoltenLeadFogDensity(ViewportEvent.RenderFog event) {
-            Camera camera = event.getCamera();
-            FluidState fluidState = camera.getBlockAtCamera().getFluidState();
-
-            if(fluidState.getType().isSame(OFluids.MOLTEN_LEAD.get())) {
-                event.setFarPlaneDistance(15.0F);
-                event.setCanceled(true);
-            }
-        }*/
-    }
 }

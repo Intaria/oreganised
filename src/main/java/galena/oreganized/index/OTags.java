@@ -42,7 +42,6 @@ public class OTags {
         public static final TagKey<Item> STORAGE_BLOCKS_RAW_SILVER = forgeTag("storage_blocks/raw_silver");
         public static final TagKey<Item> STORAGE_BLOCKS_RAW_LEAD = forgeTag("storage_blocks/raw_lead");
         public static final TagKey<Item> BUCKETS_MOLTEN_LEAD = forgeTag("buckets/molten_lead");
-        public static final TagKey<Item> TOOLS_BUSH_HAMMER = forgeTag("tools/bush_hammer");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(Oreganized.modLoc(name));
@@ -54,7 +53,6 @@ public class OTags {
 
     public static class Blocks {
 
-        public static final TagKey<Block> MINEABLE_WITH_BUSH_HAMMER = tag("mineable/bush_hammer");
         public static final TagKey<Block> ENGRAVABLE = tag("engravable");
         public static final TagKey<Block> ENGRAVABLE_NEEDS_PLATE = tag("engravable/needs_plate");
         public static final TagKey<Block> FIRE_SOURCE = tag("fire_source");

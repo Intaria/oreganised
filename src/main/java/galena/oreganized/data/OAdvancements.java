@@ -40,21 +40,6 @@ public class OAdvancements extends AdvancementProvider {
 
         @Override
         public void accept(Consumer<Advancement> consumer) {
-            Advancement mirror_mirror = Advancement.Builder.advancement()
-                    .parent(getAdv("minecraft:adventure/root"))
-                    .display(
-                            OItems.SILVER_MIRROR.get(),
-                            Component.translatable("advancements.adventure.mirror_mirror.title"),
-                            Component.translatable("advancements.adventure.mirror_mirror.description"),
-                            null,
-                            FrameType.TASK,
-                            true,
-                            true,
-                            false
-                    )
-                    .addCriterion("has_silver_mirror", InventoryChangeTrigger.TriggerInstance.hasItems(OItems.SILVER_MIRROR.get()))
-                    .save(consumer, "oreganized:adventure/mirror_mirror");
-
             Advancement eat_with_lead = Advancement.Builder.advancement()
                     .parent(getAdv("minecraft:story/upgrade_tools"))
                     .display(

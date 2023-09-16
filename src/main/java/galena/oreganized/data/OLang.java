@@ -31,8 +31,6 @@ public class OLang extends OLangProvider {
         addEffect(OEffects.STUNNING, "Stunning");
         addPotion(OPotions.STUNNING, "Stunning");
 
-        addAdvTitle("adventure.mirror_mirror", "Mirror, Mirror who is the fairest?");
-        addAdvDesc("adventure.mirror_mirror", "Obtain a Silver Mirror");
         addAdvTitle("story.melting_point", "Melting Point");
         addAdvDesc("story.melting_point", "Pick up Molten Lead from a cauldron");
         addAdvTitle("story.obtain_silver", "Every Stone has a Silver Lining");

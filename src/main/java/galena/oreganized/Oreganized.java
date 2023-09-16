@@ -161,14 +161,6 @@ public class Oreganized {
         CompatHandlerClient.setup(event);
         OreganizedClient.registerBlockRenderers();
 
-        ItemProperties.register(OItems.SILVER_MIRROR.get(), new ResourceLocation("level"), (stack, world, entity, seed) -> {
-            if(entity == null) {
-                return 8;
-            } else {
-                return stack.getOrCreateTag().getInt("Level");
-            }
-        });
-
         if (ModList.get().isLoaded("detailab")) {
             ResourceLocation texture = modLoc("textures/gui/armor_bar.png");
             DetailArmorBarAPI.customArmorBarBuilder().armor((ArmorItem) OItems.ELECTRUM_CHESTPLATE.get(), (ArmorItem) OItems.ELECTRUM_HELMET.get(), (ArmorItem) OItems.ELECTRUM_LEGGINGS.get(), (ArmorItem) OItems.ELECTRUM_BOOTS.get())
