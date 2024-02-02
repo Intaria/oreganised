@@ -2,7 +2,6 @@ package galena.oreganized.integration.quark;
 
 import galena.oreganized.index.OBlocks;
 import galena.oreganized.integration.quark.block.VerticalSlabBlock;
-import galena.oreganized.integration.quark.item.BoltarangItem;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -38,10 +37,6 @@ public class QCompatRegistry {
     public static final RegistryObject<StairBlock> RAW_SILVER_BRICK_STAIRS = OBlocks.register("raw_silver_brick_stairs", () -> new StairBlock(() -> RAW_SILVER_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(OBlocks.RAW_SILVER_BLOCK.get())), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<VerticalSlabBlock> RAW_LEAD_BRICK_VERTICAL_SLAB = OBlocks.register("raw_lead_brick_vertical_slab", () -> new VerticalSlabBlock(BlockBehaviour.Properties.copy(OBlocks.RAW_LEAD_BLOCK.get())), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<VerticalSlabBlock> RAW_SILVER_BRICK_VERTICAL_SLAB = OBlocks.register("raw_silver_brick_vertical_slab", () -> new VerticalSlabBlock(BlockBehaviour.Properties.copy(OBlocks.RAW_SILVER_BLOCK.get())), CreativeModeTab.TAB_BUILDING_BLOCKS);
-
-    //public static final RegistryObject<EntityType<Boltarang>> BOLTARANG = ENTITIES.register("boltarang", () -> EntityType.Builder.<Boltarang>of(Boltarang::new, MobCategory.MISC).sized(0.4F, 0.4F).clientTrackingRange(4).updateInterval(10).build("bolterang"));
-
-    //public static final RegistryObject<BoltarangItem> BOLTARANG_ITEM = ITEMS.register("boltarang", () -> new BoltarangItem(PickarangModule.flamerang));
 
     public static void register() {
 
