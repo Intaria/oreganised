@@ -86,15 +86,6 @@ public abstract class OLangProvider implements DataProvider {
         add("item.minecraft.tipped_arrow.effect." + ForgeRegistries.POTIONS.getKey(potion.get()).getPath(), "Arrow of " + name);
     }
 
-    public void addDisc(Supplier<? extends RecordItem> disc, String desc) {
-        addItem(disc, "Music Disc");
-        add(disc.get().getDescriptionId() + ".desc", desc);
-    }
-
-    public void addDisc(Supplier<? extends RecordItem> disc, String artist, String song) {
-        addDisc(disc, artist + " - " + song);
-    }
-
     public void addAdvTitle(String advancementTitle, String name) {
         add("advancements." + advancementTitle + ".title", name);
     }

@@ -12,9 +12,6 @@ import net.minecraftforge.registries.RegistryObject;
 public class OItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Oreganized.MOD_ID);
 
-    // Discs
-    public static final RegistryObject<RecordItem> MUSIC_DISC_STRUCTURE = ITEMS.register("music_disc_structure", () -> new OMusicDiscItem(13, OSoundEvents.MUSIC_DISC_STRUCTURE, (new Item.Properties()).tab(CreativeModeTab.TAB_MISC), 2980));
-
     // Crafting Materials
     public static final RegistryObject<Item> RAW_SILVER = ITEMS.register("raw_silver", () -> new OItem(Items.GOLD_INGOT));
     public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot", () -> new OItem(RAW_SILVER.get()));

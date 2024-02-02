@@ -23,7 +23,6 @@ public class OItemModels extends OItemModelProvider {
 
     @Override
     protected void registerModels() {
-        normalItem(OItems.MUSIC_DISC_STRUCTURE);
         normalItem(OItems.RAW_SILVER);
         normalItem(OItems.SILVER_INGOT);
         normalItem(OItems.SILVER_NUGGET);

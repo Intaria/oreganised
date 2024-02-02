@@ -73,25 +73,6 @@ public class PlayerEvents {
             if (!world.isClientSide() && waxedBlock != null) world.setBlock(pos, waxedBlock.defaultBlockState(), 11);
             world.levelEvent(player, 3003, pos, 0);
         }
-
-        if (itemStack.is(Items.MUSIC_DISC_11) && state.is(OBlocks.MOLTEN_LEAD_CAULDRON.get())) {
-            if (!state.getValue(MoltenLeadCauldronBlock.AGE).equals(3)) return;
-            ItemStack newDisc = new ItemStack(OItems.MUSIC_DISC_STRUCTURE.get());
-
-            player.swing(hand);
-            if (!player.isCreative()) itemStack.shrink(1);
-            world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.GENERIC_EXTINGUISH_FIRE, SoundSource.BLOCKS, 1.0F, 1.0F);
-            if (!world.isClientSide()) player.awardStat(Stats.ITEM_USED.get(itemStack.getItem()));
-
-            if (itemStack.isEmpty()) {
-                player.setItemInHand(hand, newDisc);
-                return;
-            }
-            if (!player.getInventory().add(newDisc)) {
-                player.drop(newDisc, false);
-                //return;
-            }
-        }
     }
 
     @SubscribeEvent

@@ -18,8 +18,6 @@ public class OLang extends OLangProvider {
     }
     @Override
     protected void addTranslations() {
-        addDisc(OItems.MUSIC_DISC_STRUCTURE, "Firch", "structure");
-
         addItem(OItems.SHRAPNEL_BOMB_MINECART, "Minecart with Shrapnel Bomb");
 
         addBlock(OBlocks.RAW_SILVER_BLOCK, "Block of Raw Silver");
@@ -39,8 +37,6 @@ public class OLang extends OLangProvider {
         addAdvDesc("story.electrum_gear", "Obtain a full set of electrum armor");
         addAdvTitle("story.eat_with_lead", "Like the Romans");
         addAdvDesc("story.eat_with_lead", "Eat anything with lead in your hotbar");
-        addAdvTitle("story.disc_smith", "Disc Smith");
-        addAdvDesc("story.disc_smith", "Submerge a broken music disc into molten lead");
 
         // JEED compat
         add("effect.oreganized.stunning.description", "Paralyzes the victim periodically with random intervals");
