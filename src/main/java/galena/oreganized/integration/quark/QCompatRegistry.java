@@ -1,6 +1,7 @@
 package galena.oreganized.integration.quark;
 
 import galena.oreganized.index.OBlocks;
+import galena.oreganized.integration.quark.block.VerticalSlabBlock;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
